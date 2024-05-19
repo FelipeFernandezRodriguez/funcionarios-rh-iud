@@ -812,14 +812,14 @@ public class MainWindow extends javax.swing.JFrame {
         try {
             Funcionario funcionario = new Funcionario();
 
-            funcionario.setDocumento(String.valueOf(cbxTipoDocumento.getSelectedIndex()+1)); 
+            funcionario.setDocumento(String.valueOf(cbxTipoDocumento.getSelectedIndex())); 
             funcionario.setDocumentoNombre(txtTipoDocumentoEdit.getText().trim());
             funcionario.setNumeroDocumento(txtNumeroIdentificacion.getText().trim());
             funcionario.setNombres(txtNombres.getText().trim());
             funcionario.setApellidos(txtApellidos.getText().trim());
-            funcionario.setSexo(String.valueOf(cbxSexo.getSelectedIndex()+1)); 
+            funcionario.setSexo(String.valueOf(cbxSexo.getSelectedIndex())); 
             funcionario.setSexoNombre(txtSexoEdit.getText().trim());
-            funcionario.setEstadoCivil(String.valueOf(cbxEstadoCivil.getSelectedIndex()+1));
+            funcionario.setEstadoCivil(String.valueOf(cbxEstadoCivil.getSelectedIndex()));
             funcionario.setEstadoCivilNombre(txtEstadoCivilEdit.getText().trim());
             funcionario.setDireccion(txtDireccion.getText().trim());
             funcionario.setTelefono(txtTelefono.getText().trim());
