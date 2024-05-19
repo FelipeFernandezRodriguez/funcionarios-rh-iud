@@ -922,8 +922,20 @@ public class MainWindow extends javax.swing.JFrame {
         }
         
         if(txtIdTipoDocumentoEdit.getText().trim().length() == 0){
-            JOptionPane.showMessageDialog(null, "Digite el número de identificación");
+            JOptionPane.showMessageDialog(null, "Digite el id del tipo de documento");
             txtIdTipoDocumentoEdit.requestFocus();
+            return;
+        }
+        
+        if(txtTipoDocumentoEdit.getText().trim().length() == 0){
+            JOptionPane.showMessageDialog(null, "Digite el tipo de documento");
+            txtTipoDocumentoEdit.requestFocus();
+            return;
+        }
+        
+        if(txtNumeroDocumentoEdit.getText().trim().length() == 0){
+            JOptionPane.showMessageDialog(null, "Digite el número de documento");
+            txtNumeroDocumentoEdit.requestFocus();
             return;
         }
         
@@ -940,7 +952,7 @@ public class MainWindow extends javax.swing.JFrame {
         }
         
         if(txtIdSexoEdit.getText().trim().length() == 0){
-            JOptionPane.showMessageDialog(null, "Digite el estado civil");
+            JOptionPane.showMessageDialog(null, "Digite el id del sexo");
             txtIdSexoEdit.requestFocus();
             return;
         }
@@ -952,13 +964,13 @@ public class MainWindow extends javax.swing.JFrame {
         }
         
         if(txtIdEstadoCivilEdit.getText().trim().length() == 0){
-            JOptionPane.showMessageDialog(null, "Digite el sexo");
+            JOptionPane.showMessageDialog(null, "Digite el id del estado civil");
             txtIdEstadoCivilEdit.requestFocus();
             return;
         }
         
         if(txtEstadoCivilEdit.getText().trim().length() == 0){
-            JOptionPane.showMessageDialog(null, "Digite el sexo");
+            JOptionPane.showMessageDialog(null, "Digite el estado civil");
             txtEstadoCivilEdit.requestFocus();
             return;
         }
